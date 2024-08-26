@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - ProfitAI</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ProfitAI</h1>
+        <p>Select your trading preferences to get started:</p>
+        <form id="trading-style-form">
+            <label for="equity">How much equity do you have?</label>
+            <input type="number" id="equity" placeholder="Enter equity in USD" required>
+            
+            <label for="charts">What charts do you want to trade?</label>
+            
+            <div class="dropdown">
+                <select id="charts" multiple>
+                    <option value="EURUSD">EURUSD</option>
+                    <option value="BTCUSD">BTCUSD</option>
+                    <option value="XAUUSD">XAUUSD</option>
+                    <option value="AAPL">AAPL</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+
+            <label for="daily-target">What is your daily profit target?</label>
+            <input type="number" id="daily-target" placeholder="Enter target in USD" required>
+            
+            <button type="submit">Start Trading</button>
+        </form>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - ProfitAI</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+    <header>
+        <div class="market-price-screen">
+            <div class="price-item">EURUSD: <span id="price-eurusd"></span></div>
+            <div class="price-item">BTCUSD: <span id="price-btcusd"></span></div>
+            <div class="price-item">XAUUSD: <span id="price-xauusd"></span></div>
+            <!-- Add more popular assets -->
+        </div>
+    </header>
+    <div class="container">
+        <h1>Trading Dashboard</h1>
+        <div id="tradingview-widget"></div>
+        <div id="signal-output">
+            <!-- Display generated signals -->
+        </div>
+        <button id="martingale">Apply Martingale Strategy</button>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>
